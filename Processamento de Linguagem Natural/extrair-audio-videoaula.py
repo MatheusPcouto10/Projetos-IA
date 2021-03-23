@@ -8,7 +8,7 @@ from nltk import word_tokenize
 from nltk.corpus import stopwords
 
 # Retirando o texto de uma videoaula
-aula = mp.VideoFileClip('aula.mp4').subclip(0,40)
+aula = mp.VideoFileClip('aula.mp4').subclip(0,120)
 aula.audio.write_audiofile('aula.wav')
 
 with sr.AudioFile('aula.wav') as source:
